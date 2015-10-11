@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://'+getenv('OC_HOST')+'/');
+define('HTTP_SERVER', 'http://'.getenv('OC_HOST').'/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://'+getenv('OC_HOST')+'/');
+define('HTTPS_SERVER', 'http://'.getenv('OC_HOST').'/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/catalog/');
