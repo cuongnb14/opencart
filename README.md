@@ -1,5 +1,6 @@
 # opencart (for docker images)
 - Đây là mã nguồn opencart đã được cài đặt sẵn dùng để build docker images.
+- Dùng file opencart.sql để import cở sở dữ liệu cho mã nguồn này.
 
 ### Biến môi trường sử dụng trong mã nguồn
 - OC_HOST : địa chỉ của host kèm theo cổng (ví dụ: 192.168.1.12:10000)
