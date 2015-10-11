@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost:8014/');
+define('HTTP_SERVER', 'http://'+getenv('OC_HOST')+'/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost:8014/');
+define('HTTPS_SERVER', 'http://'+getenv('OC_HOST')+'/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/catalog/');
