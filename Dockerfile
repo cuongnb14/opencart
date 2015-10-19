@@ -3,7 +3,7 @@
 #
 
 FROM php:5.6-apache
-MAINTAINER kev<noreply@datageek.info>
+MAINTAINER bacuong<cuongnb14@gmail.com>
 
 RUN a2enmod rewrite
 
@@ -16,11 +16,11 @@ WORKDIR /var/www/html
 
 ENV REPO_URL https://codeload.github.com/cuongnb14/opencart/zip/master
 ENV REPO_NAME opencart
-ENV OC_HOST 25.22.28.94:80
+ENV OC_HOST localhost:10000
 
 RUN curl ${REPO_URL} -o ${REPO_NAME}.zip \
     && unzip ${REPO_NAME} \
     && cp -R ${REPO_NAME}-master/* . \
     && rm -R ${REPO_NAME}-master/ \
-    && rm ${REPO_NAME} \
+    && rm ${REPO_NAME}.zip \
     && chown -R www-data:www-data .
