@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://'.getenv('OC_HOSTNAME').'/admin/');
-define('HTTP_CATALOG', 'http://'.getenv('OC_HOSTNAME').'/');
+define('HTTP_SERVER', 'http://'.getenv('OC_HOSTNAME').':'.getenv('OC_PORT').':'.getenv('OC_PORT').'/admin/');
+define('HTTP_CATALOG', 'http://'.getenv('OC_HOSTNAME').':'.getenv('OC_PORT').'/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://'.getenv('OC_HOSTNAME').'/admin/');
-define('HTTPS_CATALOG', 'http://'.getenv('OC_HOSTNAME').'/');
+define('HTTPS_SERVER', 'http://'.getenv('OC_HOSTNAME').':'.getenv('OC_PORT').'/admin/');
+define('HTTPS_CATALOG', 'http://'.getenv('OC_HOSTNAME').':'.getenv('OC_PORT').'/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/admin/');
