@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://'.getenv('OC_HOST').'/admin/');
-define('HTTP_CATALOG', 'http://'.getenv('OC_HOST').'/');
+define('HTTP_SERVER', 'http://'.getenv('OC_HOSTNAME').'/admin/');
+define('HTTP_CATALOG', 'http://'.getenv('OC_HOSTNAME').'/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://'.getenv('OC_HOST').'/admin/');
-define('HTTPS_CATALOG', 'http://'.getenv('OC_HOST').'/');
+define('HTTPS_SERVER', 'http://'.getenv('OC_HOSTNAME').'/admin/');
+define('HTTPS_CATALOG', 'http://'.getenv('OC_HOSTNAME').'/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/admin/');
@@ -23,9 +23,9 @@ define('DIR_CATALOG', '/var/www/html/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'mysql');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'opencart');
-define('DB_PORT', '3306');
+define('DB_HOSTNAME', getenv('DB_HOSTNAME'));
+define('DB_USERNAME', getenv('DB_USERNAME'));
+define('DB_PASSWORD', getenv('DB_PASSWORD'));
+define('DB_DATABASE', getenv('DB_DATABASE'));
+define('DB_PORT', getenv('DB_PORT'));
 define('DB_PREFIX', 'oc_');
