@@ -1,6 +1,6 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://'.getenv('OC_HOSTNAME').':'.getenv('OC_PORT').':'.getenv('OC_PORT').'/admin/');
+define('HTTP_SERVER', 'http://'.getenv('OC_HOSTNAME').':'.getenv('OC_PORT').'/admin/');
 define('HTTP_CATALOG', 'http://'.getenv('OC_HOSTNAME').':'.getenv('OC_PORT').'/');
 
 // HTTPS
