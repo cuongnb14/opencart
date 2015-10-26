@@ -1,0 +1,20 @@
+{
+  "id": "opencart",
+  "container": {
+    "docker": {
+      "image": "bacuong/opencart",
+      "network": "BRIDGE",
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "parameters": [
+                { "key": "link", "value": "opencartdb:mysql" },
+                { "key": "volumes-from", "value": "first_opencart" }
+            ]
+    },
+    "type": "DOCKER"
+  }
+}
